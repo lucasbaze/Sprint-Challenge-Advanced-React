@@ -22,42 +22,65 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Why would you use class component over function components (removing hooks from the question)?
-- [ ] Name three lifecycle methods and their purposes.
-- [ ] What is the purpose of a custom hook?
-- [ ] Why is it important to test our apps?
+-   [ ] Why would you use class component over function components (removing hooks from the question)?
+
+Answer:
+
+You shouldn't. They're being phased out. You should know them to work with HOC's and other legacy code.
+
+-   [ ] Name three lifecycle methods and their purposes.
+
+Answer:
+
+-   ComponentDidMount() : The component mounted and is usually used to make ajax /axios / fetch calls
+
+-   ComponentWillUnmount() : The component is leaving the DOM and should clean up any event listeners or timeout
+
+-   ComponentShouldUpdate() : Component recieved props and needs to determine if it should update or not
+
+-   [ ] What is the purpose of a custom hook?
+
+Answer:
+
+Gives, you, the developer, self-contained further abstracted re-usabled code to drop into other areas of your project that need to return / manipulate data.
+
+-   [ ] Why is it important to test our apps?
+
+Answer:
+
+After this sprint challenge I have a very negative outlook toward testing and really don't like it at all (which is a failure of the lecture and instructor at this point), but theoretically it's to ensure code quality and that the project doesn't fail when the user is using it, but candidly testing can be such a hinderance to progress it's almost silly. You end up spending more time writing / fixing tests, that it's not even meaningful anymore. But yeah... tests == more predictable code :)
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
-- [ ] Run `yarn` to download dependencies.
-- [ ] Run the server using `yarn start` or `node server.js`.
-- [ ] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
-- [ ] Still inside the `client` folder run `yarn start` to run the client application.
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+-   [ ] Create a forked copy of this project.
+-   [ ] Add TL as collaborator on Github.
+-   [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+-   [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+-   [ ] Run `yarn` to download dependencies.
+-   [ ] Run the server using `yarn start` or `node server.js`.
+-   [ ] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
+-   [ ] Still inside the `client` folder run `yarn start` to run the client application.
+-   [ ] Implement the project on this Branch, **committing progress & changes often.**
+-   [ ] Push commits: `git push origin <firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
-- [ ] PM then will count the HW as done by merging the branch back into master.
+-   [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
+-   [ ] Add your Project Manager as a Reviewer on the Pull-request.
+-   [ ] PM then will count the HW as done by merging the branch back into master.
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-- [ ] Class component that fetches data from the server you now have running - the data can be fetched from `http://localhost:5000/api/players`
-- [ ] Display the player data you receive from the API
-- [ ] Build a custom hook and use it in your app - this can be a localStorage hook, a fetch hook, a dark mode hook, or any other hook you would like
-- [ ] Write integration tests for your React components
+-   [ ] Class component that fetches data from the server you now have running - the data can be fetched from `http://localhost:5000/api/players`
+-   [ ] Display the player data you receive from the API
+-   [ ] Build a custom hook and use it in your app - this can be a localStorage hook, a fetch hook, a dark mode hook, or any other hook you would like
+-   [ ] Write integration tests for your React components
 
 ## Stretch Problems
 
-- [ ] Implement another custom hook
-- [ ] Use a graphing library to graph the data you received from the API
+-   [ ] Implement another custom hook
+-   [ ] Use a graphing library to graph the data you received from the API
